@@ -54,3 +54,17 @@ Safety: `about` is injected with `innerHTML` (it is author-controlled HTML conta
 - The theme choice is stored in `localStorage` (always inside try/catch), and an inline script in `<head>` applies it before first paint.
 - Fonts come from Google Fonts: **Shrikhand** (display: hero name, section titles, stats, logo) is the deliberate surf-retro choice; **Poppins** is used for body/UI.
 - Animations (hero waves, reveal, typed text) must respect `prefers-reduced-motion`.
+- Spacing tokens are `--space-4` … `--space-120`, named by their px value. Component heights are `--control-sm` (40px: header buttons, chips, nav links), `--control` (48px: buttons, social buttons, list rows), `--control-lg` (56px: large CTA) and `--pill` (28px: badges and tags).
+
+## UI/UX Design System
+- Use an 8pt spacing scale.
+- Allow 4px increments for fine-tuning.
+- Do not introduce arbitrary values without justification.
+- Use existing spacing tokens.
+- Standardize the heights of equivalent components.
+- Preserve visual hierarchy through proximity.
+- Use smaller spacing within groups.
+- Use larger spacing between groups.
+- Maintain consistency across screens.
+- Respect accessibility requirements.
+- Do not alter the Design System unnecessarily.
